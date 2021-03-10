@@ -12,6 +12,7 @@ services:
     network_mode: host
     tty: true
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - ${HOME}/Documents/hackaton/root:/root
       - ${HOME}/Documents/git:/source
       - ${HOME}/Documents/hackaton/private:/private
